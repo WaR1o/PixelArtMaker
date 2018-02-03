@@ -1,3 +1,8 @@
+* {
+    font-family: 'Fira Sans', sans-serif;    
+    outline: none;
+}
+
 body {
     text-align: center;
 }
@@ -6,10 +11,14 @@ h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    background: -webkit-linear-gradient(#58eb14, #14c2e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+    color: #484848;
+    margin: 1.3em 0 1em;
 }
 
 h2:first-of-type {
@@ -35,6 +44,39 @@ td {
     width: 20px;
 }
 
-input[type=number] {
+.numInput {
+    display: inline-block;
+    height: 1.6em;
+    width: 4em;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.numInput:hover {
+    border-color: #20b2aa;
+}
+
+.btn-default {
+    height: 1.9em;
     width: 6em;
+    color: white;
+}
+
+.colorPicker,
+.btn-default {     
+    border-radius: 7px;
+    background-color: #14c2e0;
+}
+
+.colorPicker:hover,
+.btn-default:hover {
+    background-color: #23bdb2;
+    cursor: pointer;
+}
+
+.sizeLabel {
+    margin: 0 1em;
+    font-weight: 500;
+    color: #484848;
 }
